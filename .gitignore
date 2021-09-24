@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 **/credentials.json
 credentials.json
+**/migrations/**
+
 # C extensions
 *.so
 
