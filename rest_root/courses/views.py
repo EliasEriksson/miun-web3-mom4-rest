@@ -11,6 +11,6 @@ class CourseViewSet(viewsets.ModelViewSet):
     This is called from ./urls.py
     """
     authentication_classes = [SessionAuthentication, TokenAuthentication]
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
