@@ -5,8 +5,11 @@ from .models import Course
 from .serializers import CourseSerializer
 
 
-# Create your views here.
 class CourseViewSet(viewsets.ModelViewSet):
+    """
+    This view set controls what will be sent to the browser and what authentication is needed.
+    This is called from ./urls.py
+    """
     authentication_classes = [SessionAuthentication, TokenAuthentication]
     permission_classes = [permissions.IsAuthenticated]
     queryset = Course.objects.all()
