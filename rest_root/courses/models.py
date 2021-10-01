@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.html import strip_tags
 
 
 class Course(models.Model):
@@ -17,3 +18,16 @@ class Course(models.Model):
 
     def __str__(self):
         return f"{self.__class__.__name__}(code={self.code})"
+
+    def save(self, *args, **kwargs):
+        """
+        saves the model object to the database
+
+        before saving the fields are stripped from html tags to prevent XXS
+        and other not so nice things.
+        """
+        self.code = strip_tags(self.code)
+        self.name = strip_tags(self.name)
+        self.progression = strip_tags(self.progression)
+        self.plan = strip_tags(self.plan)
+        return super().save(*args, **kwargs)
