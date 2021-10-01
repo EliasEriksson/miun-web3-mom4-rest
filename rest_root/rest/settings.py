@@ -59,6 +59,15 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+    "PATCH",
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',

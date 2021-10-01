@@ -1,5 +1,23 @@
 # miun-web3-mom4-rest
 
+## Available URIs
+* `https://web3mom5rest.eliaseriksson.eu/courses/`
+  * Supported methods:
+    * GET 
+    * POST
+    * OPTIONS
+    * HEAD
+* `https://web3mom5rest.eliaseriksson.eu/courses/<courseCode>/` \
+  * `courseCode` is a 1-6 character combination of letters and numbers.
+  * Supported request methods:
+    * GET
+    * PUT
+    * PATCH
+    * DELETE
+    * HEAD
+    * OPTIONS
+  
+  
 ## Running with django development server
 The development server is not intended for production use. Instead a proper web server should be used.
 This application is hosted at https://miun.eliaseriksson.eu/ with NGINX + uWSGI but apache2 + mod_wsgi is another option.
@@ -25,7 +43,7 @@ This application is hosted at https://miun.eliaseriksson.eu/ with NGINX + uWSGI 
        "secret_key": "your django secret key"
    }
    ```
-9. Change the DEBUGG setting from `False` to `True` in `rest_root/rest/settings.py`.
+9. Change the DEBUG setting from `False` to `True` in `rest_root/rest/settings.py`.
 10. From within `rest_root/` create new migrations with `python manage.py makemigrations`.
 11. Apply the migrations with `python manage.py migrate`.
 12. Run the development server with `python manage.py runserver`
