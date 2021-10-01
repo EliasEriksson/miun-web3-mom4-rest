@@ -1,4 +1,4 @@
-# miun-web3-mom4-rest
+# miun-web3-mom5-rest
 Hosted over @ https://web3mom5rest.eliaseriksson.eu/
 
 ## Available URIs
