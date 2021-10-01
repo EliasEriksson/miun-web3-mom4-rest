@@ -25,7 +25,7 @@ with open(BASE_DIR.joinpath("rest").joinpath("credentials.json")) as credentials
 SECRET_KEY = credentials["secret_key"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "*"
