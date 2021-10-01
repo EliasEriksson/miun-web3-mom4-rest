@@ -1,4 +1,5 @@
 # miun-web3-mom4-rest
+Hosted over @ https://web3mom5rest.eliaseriksson.eu/
 
 ## Available URIs
 * `https://web3mom5rest.eliaseriksson.eu/courses/`
@@ -16,7 +17,6 @@
     * DELETE
     * HEAD
     * OPTIONS
-  
   
 ## Running with django development server
 The development server is not intended for production use. Instead a proper web server should be used.
