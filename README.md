@@ -1,5 +1,5 @@
 # miun-web3-mom5-rest
-Hosted over @ https://web3mom5rest.eliaseriksson.eu/
+Hosted over @ https://web3mom5rest.eliaseriksson.io/
 
 ## Available URIs
 * `https://web3mom5rest.eliaseriksson.eu/courses/`
